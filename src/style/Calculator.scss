@@ -23,3 +23,23 @@
     font-size: 1rem;
     color: #000000;
 }
+
+.display_input {
+    color:#000000;
+    background-color:#CFCFCF;
+    border:2pt solid #FFB90F
+}
+
+.calculator_button {
+    color:#FFB90F; 
+    background-color:#000000; 
+    cursor:hand; 
+    padding:0.563rem; 
+    border:0;
+
+    &:active {
+        filter: brightness(0.9);
+        background-color: #FFB90F;
+        color:#000000;
+    }
+}
