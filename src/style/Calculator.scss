@@ -1,3 +1,25 @@
-h1 {
-    max-width: 100%;
+.calculator {
+    color:#FFB90F; 
+    background-color:#000000; 
+    border: 2pt solid #FFB90F;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator_table {
+    width: 12.5rem;
+    border-spacing: 0.313rem;
+}
+
+.calculator_header {
+    text-align: center;
+    background-color: #FFB90F;
+    font-family: Verdana;
+    font-size: 1rem;
+    color: #000000;
 }

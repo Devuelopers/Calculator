@@ -7,18 +7,15 @@ export default defineComponent({
 </script>
 
 <template>
-    <form name="frm_calc" acton>
-        <center>
-            <table width="200" cellpadding="3" cellspacing="5"
-                style="color:#FFB90F; background-color:#000000; border:2pt solid #FFB90F">
-                <tr>
-                    <td colspan="5" align="center" bgColor="#FFB90F">
-                        <Font Face="Verdana" Size="4" Color="#000000"><b>Calculadora</b></font>
-                    </td>
-                </tr>
-            </table>
-        </center>
-    </form>
+    <div class="calculator center">
+        <table class="calculator_table">
+            <tr>
+                <td class="calculator_header" colspan="5">
+                    <b>Calculator</b>
+                </td>
+            </tr>
+        </table>
+    </div>
 </template>
 
 <style lang="scss">
