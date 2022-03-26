@@ -1,8 +1,21 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { Calculator } from '../models';
 
 export default defineComponent({
     name: "Calculator",
+    methods: {
+        reset: function () {
+            this.calculator.reset();
+            this.displayValue = "0";
+        },
+    },
+    data() {
+        return {
+            calculator: new Calculator(),
+            displayValue: '0',
+        }
+    },
 });
 </script>
 
@@ -16,10 +29,16 @@ export default defineComponent({
             </tr>
             <tr>
                 <td colspan="3">
-                    <input class="display_input" id="display_input" type="text" value="0" />
+                    <input v-model="displayValue" class="display_input" id="display_input" />
                 </td>
                 <td>
-                    <input type="reset" id="btn_reset" value="AC" class="calculator_button" />
+                    <input
+                        @click="reset"
+                        type="reset"
+                        id="btn_reset"
+                        value="AC"
+                        class="calculator_button"
+                    />
                 </td>
                 <td>
                     <center>
