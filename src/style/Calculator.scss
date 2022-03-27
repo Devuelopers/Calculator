@@ -1,7 +1,7 @@
 .calculator {
-    color:#FFB90F; 
-    background-color:#000000; 
-    border: 2pt solid #FFB90F;
+    color:#41B883; 
+    background-color:#35495E; 
+    border: 2pt solid #41B883;
 }
 
 .center {
@@ -18,28 +18,27 @@
 
 .calculator_header {
     text-align: center;
-    background-color: #FFB90F;
+    background-color: #41B883;
     font-family: Verdana;
     font-size: 1rem;
-    color: #000000;
+    color: #35495E;
 }
 
 .display_input {
-    color:#000000;
+    color:#35495E;
     background-color:#CFCFCF;
-    border:2pt solid #FFB90F
+    border:2pt solid #41B883
 }
 
 .calculator_button {
-    color:#FFB90F; 
-    background-color:#000000; 
+    color:#41B883; 
+    background-color:#35495E; 
     cursor:hand; 
     padding:0.563rem; 
     border:0;
 
     &:active {
-        filter: brightness(0.9);
-        background-color: #FFB90F;
-        color:#000000;
+        background-color: #41B883;
+        color:#35495E;
     }
 }
