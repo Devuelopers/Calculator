@@ -44,10 +44,6 @@ export class Calculator {
 
     public calculate(displayValue: string): boolean {
 
-        if (this.operator === Operation.None) {
-            return false;
-        }
-
         if (displayValue.indexOf(".") === -1) {
             this.secondOperating = parseInt(displayValue);
         }
